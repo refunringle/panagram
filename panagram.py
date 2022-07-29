@@ -1,6 +1,5 @@
-alphabet=list("abcdefghijklmnopqrstuvwxyz ")
-s = str(input('Enter the words:').lower())
-def panagram():
+def panagram(s):
+    alphabet=list("abcdefghijklmnopqrstuvwxyz")
     for i in alphabet:
         if i in s:
             continue
@@ -8,4 +7,5 @@ def panagram():
             print(i,'is not in your words!')
             return False
     return True
-print(panagram())
+s = str(input('Enter the words:').lower())
+print(panagram(s))
